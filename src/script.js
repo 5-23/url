@@ -6,7 +6,7 @@ async function main(){
     console.log(res)
     try{
         console.log(location.href)
-        location.href = res[location.href.replace("https://urlb.tk/" , "")].url
+        location.href = res[decodeURI(location.href.replace("https://urlb.tk/" , ""))].url
     }catch{
         body.innerHTML = `404 Not Found`
         document.title = `404 Not Found`
