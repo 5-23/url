@@ -1,7 +1,7 @@
 let body = document.body
 
 async function main(){
-    const req = await fetch("https://url-abcuggi.scratcher5-23.repl.co")
+    const req = await fetch("https://url-abcuggi.scratcher5-23.repl.co/api/url")
     let res = await req.json()
     console.log(res)
     try{
